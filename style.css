@@ -88,7 +88,7 @@ ul > li > a {
 .c5 {
     margin-top: 10%;
     margin-left: 28%;
-    color: white;
+    color: black;
 }
 
 .c5 span {
@@ -132,4 +132,15 @@ h1 span {
 } 
 .slide img {
     width: 100vw;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(255,255,255,1),rgba(255,255,255,0));
+    pointer-events: none;
 }
