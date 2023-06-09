@@ -150,20 +150,23 @@ h1 span {
   background-color: white;
   margin-top: 150px;
 }
+
 .title {
   text-align: center;
   font-size: 26px;
-  color: orange;
-  margin-bottom: 0;
+  color: #2dbd8c;
+  margin-bottom: 50px;
+  margin-top: 200px;
 }
+
 .service {
   margin: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -188,7 +191,7 @@ h1 span {
 }
 
 .service h2 {
-  color: orange;
+  color: #2dbd8c;
   font-size: 20px;
   margin-top: 0;
 }
@@ -204,6 +207,8 @@ h1 span {
   align-items: center;
   min-height: 100vh;
   margin-top: -120px;
+ margin-bottom: -120px;
+
 }
 .picture {
   text-align: center;
@@ -213,8 +218,26 @@ h1 span {
 .picture img {
   max-width: 100%;
   max-height: 100%;
-
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   object-fit: cover;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 100px;
+    
+}
+.button{
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #2dbd8c;
+    color: white;
+    border: none;
+   
+
 }
