@@ -135,6 +135,7 @@ h1 span {
   display: none;
   transition: opacity 0.5s ease-in-out;
 }
+
 .slide img {
   width: 100vw;
 }
@@ -264,7 +265,7 @@ background-color: #2b8e8e;
 @media screen and (max-width: 800px) {
     nav > ul {
       height: 100vh;
-      width: 50%;
+      width: 90%;
       position: fixed;
       padding-top: 20%;
       right: 0;
@@ -285,6 +286,20 @@ background-color: #2b8e8e;
       color: #2b8e8e;
     }
 
+    .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+
     .open {
       display: block;
       position: absolute;
@@ -301,7 +316,7 @@ background-color: #2b8e8e;
     }
   .content-one h1 {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 40%;
   font-size: 80px;
 }
   .content-one p {
@@ -309,8 +324,22 @@ background-color: #2b8e8e;
   font-size: 30px;
 }
 
+.c2 {
+  margin-left: 10px;
+}
+
+.c3  {
+  padding-top: 30%;
+  margin-left: 7%;
+}
+
+.c3 p {
+  font-size: 60px;
+}
+
 
 #c2 {
+  margin-top: 30%;
   font-size: 60px;
 }
 
@@ -322,7 +351,8 @@ background-color: #2b8e8e;
   font-size: 70px;
 }
 #c3 {
-  font-size: 65px;
+  font-size: 60px;
+  padding-top: 20%;
 }
 
 .c4 span {
@@ -330,7 +360,12 @@ background-color: #2b8e8e;
 }
 
 .c4 {
-  margin-left: 15%;
+  margin-left: 7%;
+}
+
+.c5 {
+  padding-top: 30%;
+  margin-left: 10px;
 }
 
   } 
