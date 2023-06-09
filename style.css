@@ -230,6 +230,7 @@ h1 span {
   justify-content: center;
   align-content: center;
   margin-bottom: 100px;
+ 
 }
 .button {
   padding: 10px;
@@ -240,4 +241,8 @@ h1 span {
   background-color: #2dbd8c;
   color: white;
   border: none;
+  cursor: pointer;
+}
+.button:hover{
+background-color: #2b8e8e;
 }
