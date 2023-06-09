@@ -50,6 +50,7 @@ function show() {
   }, 10);
   open.style.display = 'none';
   closeMenu.style.display = 'block';
+  closeMenu.style.color= '#2b8e8e';
 }
 
 function hide() {
@@ -59,6 +60,7 @@ function hide() {
   }, 1000);
   closeMenu.style.display = 'none';
   open.style.display = 'block';
+  open.style.color = '#2b8e8e'
 }
 
 function handleResize() {
