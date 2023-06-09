@@ -9,11 +9,16 @@
   height: 100vh;
 }
 
-.nav {
+.nav ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
   color: white;
   font-size: 20px;
-  display: flex;
-  justify-content: space-between;
+  padding: 20px;
 }
 
 .logo {
@@ -22,30 +27,29 @@
   background: #000001;
   background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5));
   width: 100%;
-  position: fixed;
-}
-
-ul {
-  display: flex;
-}
-
-ul > li {
-  list-style-type: none;
+  color: white;
 }
 
 nav {
+  background: #000001;
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5));
   padding: 30px 100px 0 0;
-  position: fixed;
   top: 0;
-  left: 60%;
   z-index: 139;
 }
 
-ul > li > a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+} 
+
+nav > ul {
+  display: flex;
+}
+
+i {
+  cursor: pointer;
+  display: none;
 }
 
 .content-one {
@@ -246,3 +250,78 @@ h1 span {
 .button:hover{
 background-color: #2b8e8e;
 }
+
+.fa {
+    font-size: 2rem;
+    color: white;
+    margin-left: 90%;
+    margin-top: 0;
+  }
+  .open,
+  .close {
+    display: none;
+  }
+@media screen and (max-width: 800px) {
+    nav > ul {
+      height: 100%;
+      width: 90%;
+      position: fixed;
+      top: -100%;
+      right: 0;
+      z-index: 140;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #000001;
+      transition: top 1s ease;
+      display: none;
+    }
+
+    .open {
+      display: block;
+      position: absolute;
+      top: 10px;
+      z-index: 999;
+    }
+
+    .close {
+      display: none;
+      z-index: 999;
+      position: absolute;
+    }
+  .content-one h1 {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 80px;
+}
+  .content-one p {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#c2 {
+  font-size: 60px;
+}
+
+#c2 span {
+  font-size: 65px;
+}
+
+.c5 span {
+  font-size: 70px;
+}
+#c3 {
+  font-size: 65px;
+}
+
+.c4 span {
+  font-size: 80px;
+}
+
+.c4 {
+  margin-left: 15%;
+}
+
+  } 
+
