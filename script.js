@@ -87,4 +87,14 @@ function startCount(el) {
   }, 2000 / stat);
 }
 
-
+document.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.slide, .service, .image-container, .stats div, .testimonial');
+  var windowHeight = window.innerHeight;
+  elements.forEach(function(element) {
+    var elementPosition = element.getBoundingClientRect();
+    if (elementPosition.top < windowHeight) {
+      element.style.opacity = "1"
+      element.style.transform = "translateY(0)"
+    }
+  })
+})
