@@ -11,30 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeSlides, 5000);
 });
 
-// function changeBg() {
-//   var scrollValue = window.scrollY;
-//   const nav = document.getElementById('logo');
-//   const links = document.querySelectorAll('a');
-//   if (scrollValue > 50) {
-//     nav.style.background = '#fff';
-//     nav.style.boxShadow = '0 5px 5px -3px rgba(0,0,0,.15)'
-//     nav.style.color = '#2b8e8e'
-//     for (let i = 0; i<links.length; i++) {
-//       links[i].style.color = '#2b8e8e'
-//     }
-//   }
-//   else {
-//     nav.style.background = '#000001';
-//     nav.style.background =  'linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5))';
-//     nav.style.boxShadow = 'none'
-//     nav.style.color = '#fff'
-//     for (let i = 0; i<links.length; i++) {
-//       links[i].style.color = '#fff'
-//     }
-//   }
-// }
-
-//window.addEventListener('scroll', changeBg)
+document.addEventListener("DOMContentLoaded", function () {
+  const testimony = document.querySelectorAll(".testimonial");
+  let current = 0;
+  testimony[current].style.display = "block";
+  function changeTestimony() {
+    testimony[current].style.display = "none";
+    current = (current + 1) % testimony.length;
+    testimony[current].style.display = "block";
+  }
+  setInterval(changeTestimony, 3000);
+});
 
 const mainMenu = document.querySelector('nav > ul');
 const open = document.querySelector('.open');
