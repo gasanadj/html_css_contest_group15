@@ -70,13 +70,28 @@ let stat = document.querySelectorAll('.stats .sta');
 let start = false;
 
 window.onscroll = function() {
-  if (window.scrollY >= section.offsetTop) {
-    if(!start) {
-      stat.forEach((sta) => startCount(sta))
-    }
-    start = true
+  scrollFunction();
+  checkSectionOffset();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTopBtn").style.display = 'block';
+  } else {
+    document.getElementById("scrollToTopBtn").style.display = 'none';
   }
 }
+
+function checkSectionOffset() {
+  if (window.scrollY >= section.offsetTop) {
+    if (!start) {
+      stat.forEach((sta) => startCount(sta));
+    }
+    start = true;
+  }
+}
+
+
 function startCount(el) {
   let max = el.dataset.max;
   let count = setInterval(() => {
@@ -104,9 +119,6 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-window.onscroll = function() {
-  scrollFunction();
-};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
