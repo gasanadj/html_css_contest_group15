@@ -647,3 +647,37 @@ background-color: #2b8e8e;
   }
 }
 
+.title h1{
+  text-align: center;
+  padding-top: 0;
+  font-size: 50px;
+
+}
+
+.contact-paragraph{
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact-form{
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-container{
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 90%;
+  background-color: #2dbd8c;
+  margin: 20px;
+}
+
+input{
+  height: 30px;
+  
+}
