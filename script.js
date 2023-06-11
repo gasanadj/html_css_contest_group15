@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     current = (current + 1) % testimony.length;
     testimony[current].style.display = "block";
   }
-  setInterval(changeTestimony, 3000);
+  setInterval(changeTestimony, 7000);
 });
 
 const mainMenu = document.querySelector('nav > ul');
