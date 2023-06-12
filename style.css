@@ -738,3 +738,95 @@ background-color: #2b8e8e;
 
 }
 
+
+.Address-detail {
+  display: flex;
+  margin: 50px;
+  margin-bottom: 70px;
+}
+
+.about-us {
+  
+  display: flex;
+  justify-content: space-evenly;
+}
+.Icon {
+  margin-right: 20px;
+  margin-top: 4px;
+}
+.sub-address h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #3f3f3f;
+}
+.sub-address p {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #4e4e4e;
+}
+.input-text{
+  border: 0.2px solid #9b9999;
+ 
+  
+}
+.Input1, .Input2, .Input3{
+  margin: 20px;
+}
+#input1{
+  height: 50px;
+  border-radius: 5px;
+  width: 290px;
+  
+  
+}
+#input2{
+  width: 590px;
+  height: 50px;
+  border-radius: 5px;
+}
+#input3{
+  width: 590px;
+  height: 150px;
+  border-radius: 5px;
+  
+  
+}
+.Addrees{
+  margin-top: -20px;
+}
+
+.icoon{
+font-size: 30px;
+color: #343333;
+}
+.icoon:hover{
+  color: #2dbd8c;
+}
+
+.title2 {
+  text-align: center;
+  font-size: 26px;
+  color: #2dbd8c;
+  
+  margin-top: 80px;
+  margin-bottom: -20px ;
+}
+@media screen and (max-width: 968px) {
+  .about-us{
+    display: flex;
+    flex-direction: column;
+  }
+  #input3{
+    width: 290px;
+  }
+  #input2{
+    width: 290px;
+  }
+  #input1{
+    margin-top:13px ;
+  }
+}
