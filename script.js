@@ -101,21 +101,6 @@ function startCount(el) {
     }
   }, 2000 / stat);
 }
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form submission
-  location.reload();
-    
-  // Get form data
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-
-  // Compose email message
-  var subject = "Contact Form Submission";
-  var body = "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message;
-  var mailtoLink = "mailto:allworksarehere@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-});
 document.addEventListener('scroll', function() {
   var elements = document.querySelectorAll('.slide, .service, .image-container, .stats div, .testimonial');
   var windowHeight = window.innerHeight;
